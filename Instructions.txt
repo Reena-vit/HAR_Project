@@ -1,0 +1,46 @@
+PROJECT: AI-Based Human Activity Recognition
+
+---
+
+FILES INCLUDED:
+
+* main.py → Main program
+* har_model.keras → Trained model
+* labels.pkl → Class labels
+* model_config.json → Configuration file
+* haarcascade XML files → Detection files
+* HAR_Dataset.zip → Dataset used
+* requirements.txt → Required libraries
+
+---
+
+HOW TO RUN THE PROJECT:
+
+1. Install Python (version 3.8 or above)
+   Make sure Python is added to PATH
+
+2. Install required libraries:
+   pip install -r requirements.txt
+
+3. Run the project:
+   python main.py
+
+4. Choose mode:
+   1 → Webcam Detection
+   2 → Video File Detection
+
+5. For video mode:
+
+   * Place the video file inside the project folder
+   * Enter only the file name
+
+   Example:
+   sample.mp4
+
+---
+
+NOTES:
+
+* The model is already trained
+* Ensure all files are in the same folder
+* Webcam must be connected for live detection

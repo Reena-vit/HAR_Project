@@ -1,0 +1,25 @@
+{
+  "sequence_length": 10,
+  "img_size": 112,
+  "num_classes": 18,
+  "class_names": [
+    "boxing",
+    "calling",
+    "clapping",
+    "cycling",
+    "dancing",
+    "drinking",
+    "eating",
+    "fighting",
+    "hugging",
+    "jumping",
+    "laughing",
+    "listening_to_music",
+    "mobile_using",
+    "running",
+    "side",
+    "sitting",
+    "walking",
+    "waving"
+  ]
+}

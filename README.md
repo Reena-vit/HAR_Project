@@ -49,7 +49,10 @@ This project implements a real-time Human Activity Recognition (HAR) system usin
 * Python 3.8 or above
 
 Install dependencies using:
+
+```
 pip install -r requirements.txt
+```
 
 ---
 
@@ -58,8 +61,9 @@ pip install -r requirements.txt
 1. Open terminal in the project folder
 
 2. Run the program:
-
-   python main.py
+```
+python main.py
+```
 
 3. Select mode:
 
@@ -72,7 +76,9 @@ pip install -r requirements.txt
    * Enter only the file name (no quotes)
 
    Example:
+   ```
    sample.mp4
+   ```
 
 ---
 

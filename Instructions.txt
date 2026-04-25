@@ -1,46 +1,77 @@
-PROJECT: AI-Based Human Activity Recognition
+PROJECT SETUP & EXECUTION GUIDE
+
+PROJECT: AI-Based Human Activity Recognition (CNN-LSTM)
 
 ---
 
 FILES INCLUDED:
 
 * main.py → Main program
-* har_model.keras → Trained model
+* har_model_tf.zip → Trained model (compressed)
 * labels.pkl → Class labels
 * model_config.json → Configuration file
-* haarcascade XML files → Detection files
-* HAR_Dataset.zip → Dataset used
-* requirements.txt → Required libraries
+* haarcascade XML files → Human detection files
+* requirements.txt → Required Python libraries
 
 ---
 
 HOW TO RUN THE PROJECT:
 
 1. Install Python (version 3.8 or above)
-   Make sure Python is added to PATH
+   Ensure Python is added to PATH
 
 2. Install required libraries:
-   pip install -r requirements.txt
 
-3. Run the project:
-   python main.py
+```
+pip install -r requirements.txt
+```
 
-4. Choose mode:
-   1 → Webcam Detection
-   2 → Video File Detection
+3. Extract the model file:
 
-5. For video mode:
+* Extract **har_model_tf.zip** in the same project folder
+* Ensure the extracted folder name is **har_model_tf**
+* Do not rename or modify the folder
 
-   * Place the video file inside the project folder
-   * Enter only the file name
+If the model is not extracted properly, the program may fail to load the model.
 
-   Example:
-   sample.mp4
+4. Run the project:
+
+```
+python main.py
+```
+
+5. Choose mode:
+
+* 1 → Webcam Detection
+* 2 → Video File Detection
+
+6. For video mode:
+
+* Place the video file inside the project folder
+* Enter only the file name (no quotes)
+
+Example:
+
+```
+sample.mp4
+```
+
+---
+
+OUTPUT:
+
+* Detects human activity in real-time (webcam) or from video input
+* Draws a bounding box around the detected person
+* Displays the predicted activity label on the screen
+* Shows confidence score (accuracy percentage) for each prediction
+* Continuously updates predictions based on live input
 
 ---
 
 NOTES:
 
-* The model is already trained
+* The model is already trained and ready to use
 * Ensure all files are in the same folder
 * Webcam must be connected for live detection
+* Do not rename required files
+* Ensure the model folder is properly extracted before running the program
